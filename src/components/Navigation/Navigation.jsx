@@ -1,7 +1,9 @@
-import "./Navigation.css"
+import styles from "./Navigation.module.css"
+
 const Navigation = () => {
+  console.log(styles);
   return (
-   <nav>
+   <nav className={`${styles.navigation} container`}>
     <div className="logo">
         <img src="./logo.png" alt="" />
     </div>
